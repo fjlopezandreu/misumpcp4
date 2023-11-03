@@ -13,7 +13,7 @@ pipeline {
         stage('Iniciar stack contenedores') {
             steps {
                 sh '''
-                    docker compose up -d --wait
+                    docker compose up -d
                     docker compose ps
                 '''
             }
