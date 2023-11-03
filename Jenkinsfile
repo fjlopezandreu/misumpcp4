@@ -19,10 +19,4 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            sh 'docker compose down'
-            sh 'docker compose ps'
-        }
-    }
 }
